@@ -1,2 +1,2 @@
-# Correci-n
+# Correction
 Parcial #1
