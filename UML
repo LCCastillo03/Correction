@@ -1,0 +1,42 @@
+@startuml 
+left to right direction 
+class forma { 
+color: Color
+dimensiones: int
+tipo: TipoFigura
+calculararea ()
+}
+
+class Rectangulo {
+base: int 
+altura: int 
+calculararea (base, altura): float 
+}
+class Cuadrado { 
+lado: int 
+calculararea (lado): float
+}
+class Triangulo {
+base: int
+altura:int
+calcualararea(lado): float
+}
+class Trapecio {
+diagonalM: int
+diagonalm: int
+calculararea(diagonalM,diagonalm): float
+}
+forma <|--  Cuadrado 
+forma <|--  Rectangulo 
+forma <|--  Triangulo
+forma <|--  Trapecio
+
+
+enum TipoFiguras {
+Rectangulo
+Cuadrado
+Triangulo
+Trapecio
+}
+
+@enduml
